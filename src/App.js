@@ -12,14 +12,10 @@ function App() {
         </div>
       </nav>
       <section className="articles">
-        <article className="post">
-          <h2>the WET Codbase</h2>
-          <div className="post-info">
-            <span>Sunday 4th, 2020</span>
-            <span>11 min read</span>
-          </div>
-          <p>Come waste your time with me</p>
-        </article>
+        {data.map((item) => {
+          console.log(item);
+          return <Article key={item.id} {...item} />;
+        })}
       </section>
     </main>
   );
