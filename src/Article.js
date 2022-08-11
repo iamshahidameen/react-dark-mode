@@ -1,7 +1,7 @@
 import React from 'react';
 import moment from 'moment';
 const Article = ({ id, title, snippet, date, length }) => {
-  console.log(JSON.stringify(date));
+  // console.log(JSON.stringify(date));
   return (
     <article className="post">
       <h2>{title}</h2>
