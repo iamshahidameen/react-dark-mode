@@ -3,6 +3,7 @@ import data from './data';
 import Article from './Article';
 
 function App() {
+  const [toggle, setToggle] = useState(false);
   return (
     <main>
       <nav>
